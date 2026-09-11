@@ -1,0 +1,17 @@
+aws_region = "us-east-1"
+
+# Existing AWS Managed Microsoft AD
+active_directory_id = "d-90667ca260"
+
+# Existing subnet in the same VPC as the directory
+fsx_subnet_id = "subnet-0756ec6705c57cfe5"
+
+# Security group allowing FSx <-> AD and Windows client <-> FSx
+fsx_security_group_id = ""
+
+fsx_name = "fsx-windows-e2e-test"
+
+storage_capacity    = 32
+storage_type        = "SSD"
+throughput_capacity = 32
+deployment_type     = "SINGLE_AZ_2"
